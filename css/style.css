@@ -1,17 +1,34 @@
-html, body {
+.landingBody {
   margin:0px;
-  background-color: white; 
-  width: 100%; 
+}
+
+.consumerBody {
+  margin:0px;
+  background-color: white;
+  width: 100%;
   height: 100%;
   background-position: center;
   font-family: 'Montserrat';
-  font-size: 16px; 
-  position: relative;    
+  font-size: 16px;
+  position: relative;
 }
 
-header {
+.landingHeader {
+  color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../images/customer1.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.consumerHeader {
   color: white;
-  background-color: #00A86B ; 
+  background-color: #00A86B ;
   background-size: cover;
   background-position: center;
   height: 40%;
@@ -21,69 +38,110 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
-
 }
 
+
 header h1 {
-  color: white;
-  max-width: 100%;  
+  max-width: 780px;
+  font-family: 'Montserrat';
   text-align: center;
-  font-weight: normal; 
-  vertical-align: center; 
-  font-size: 300%;
-  font-family: 'Montserrat'; 
+  font-weight: normal;
+  font-size: 72px;
+  color:white;
+  margin-top: 0px;
+  margin: 10px;
+ /* z-index: 1;*/
 }
 
 header h2 {
   color: white;
-  width: 100%;  
-  margin-top: 0px; 
+  width: 100%;
+  margin-top: 0px;
   text-align: center;
-  font-weight: normal; 
-  vertical-align: center; 
+  font-weight: normal;
+  vertical-align: center;
   font-size: 180%;
-  font-family: 'Montserrat'; 
+  font-family: 'Montserrat';
 }
 
 .sub {
-  max-width: 100%; 
-  margin-top: 1%; 
-  font-family: 'Montserrat'; 
+  max-width: 780px;
+  margin-top: 0px;
+  font-family: 'Montserrat';
   text-align: center;
-  font-weight: normal; 
-  justify-content: center; 
-  font-size: 150%;
-  color: white;
+  font-weight: normal;
+  font-size: 24px;
+  color:white;
 }
 
+#top{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mailinput{
+  margin-top: 60px;
+  height: 40px;
+  font-size: 20px;
+  font-color:grey;
+  border-radius: 13px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-style: italic;
+}
+
+#btn {
+  /*-webkit-border-radius: 13;*/
+ /* -moz-border-radius: 0;*/
+  border-radius: 13px;
+  border-color: none;
+  border-width: 0px;
+  font-family: Montserrat;
+  color: #ffffff;
+  font-size: 30px;
+  background: #d93434;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-top: 0px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#btn:hover {
+  background: #fc3c3c;
+  text-decoration: none;
+
+}
 
 .bottom2{
   text-align: center;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   background-color: white;
   background-size: cover;
-  width: 100%; 
-  height: 600px; 
-  margin: 0px; 
+  width: 100%;
+  height: 600px;
+  margin: 0px;
 }
 
 .textbottom{
   text-align: center;
-  margin-top: 2%; 
-  font-family: 'Roboto'; 
+  margin-top: 2%;
+  font-family: 'Roboto';
   font-size: 150%;
   font-style: italic;
 
 }
 
 .inputbottom{
-  height: 400px; 
-  vertical-align: top; 
+  height: 400px;
+  vertical-align: top;
 }
 
 input[type=text] {
-    height: 250px;  
+    height: 250px;
     vertical-align: top;
     font-size: 125%;
     width: 80%;
@@ -104,7 +162,7 @@ input[type=text3] {
 }
 
 input[type=submit] {
-    margin-top: 1%; 
+    margin-top: 1%;
     color: white;
     background: #00A86B;
     border: solid;
